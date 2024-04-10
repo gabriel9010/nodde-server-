@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traccia Guadagni e Perdite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Traccia Guadagni e Perdite</h1>
+        <form id="transaction-form">
+            <input type="text" id="name" placeholder="Nome">
+            <input type="number" id="amount" placeholder="Importo">
+            <input type="date" id="date">
+            <select id="type">
+                <option value="guadagno">Guadagno</option>
+                <option value="perdita">Perdita</option>
+            </select>
+            <button type="submit">Aggiungi Transazione</button>
+        </form>
+        <div id="transactions-list"></div>
+        <div id="balance"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

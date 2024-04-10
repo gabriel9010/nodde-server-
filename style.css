@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e3e80;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: #888e91f3;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input, select, button {
+            margin: 10px 0;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        input[type="date"] {
+            width: 100%;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        #transactions-list {
+            margin-top: 20px;
+        }
+        
+        .transaction {
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        
+        .guadagno {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        
+        .perdita {
+            background-color: #F44336;
+            color: #fff;
+        }
+        
+        #balance {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+        /*Stili per il grafico*/
+.chart-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .chart {
+            width: 100%;
+            height: 100%;
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .chart-subtitle {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .chart-legend {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        .chart-legend-item {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .chart-legend-item-color {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+        }
+
+        .chart-legend-item-text {
+            display: inline-block;
+        }   
