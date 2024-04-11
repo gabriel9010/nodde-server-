@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/bilancioDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://gabrielclaudio30:Fiokko12@cluster-app.knwqaas.mongodb.net/?retryWrites=true&w=majority&appName=cluster-app', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'Errore di connessione al database:'));
