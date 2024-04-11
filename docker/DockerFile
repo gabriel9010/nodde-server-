@@ -1,0 +1,17 @@
+# Usa un'immagine Node.js come base
+FROM node:14
+
+# Imposta il lavoro di lavoro nella directory dell'app
+WORKDIR /app
+
+# Copia i file necessari (HTML, CSS, JavaScript) nella directory dell'app
+COPY index.html style.css script.js app.js /app/
+
+# Installa le dipendenze del server Node.js
+RUN npm install express mongoose
+
+# Esponi la porta 3000 per il server Node.js
+EXPOSE 3000
+
+# Avvia il server Node.js quando il container viene avviato
+CMD ["node", "app.js"]
